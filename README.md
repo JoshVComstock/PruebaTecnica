@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Esta prueba se trata de un listado de peliculas
+Este proyecto es una aplicacion web que esta desarrollada con React y que muestra un listado de peliculas de forma alfabetica y mayores con emision mayores o igual a 2010, la aplicacion tambien cuenta con 3 secciones en Inicio que muestra todas como peliculas y series, la seccion series que solo muestra series y la seccion peliculas que solo muestra peliculas, en todos las secciones solo muestran un listado de 20.
 
-Currently, two official plugins are available:
+## Introduccion de Ejecucion
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Con los siguientes pasos podra hacer la ejecucion de forma local:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+**Clonar el repositorio**
+```bash
+    git clone https://github.com/JoshVComstock/PruebaTecnica.git
+    cd PruebaTecnica
+```
+**Intalar dependencias**
+```bash
+npm i
+```
+**Ejecutar la aplicacion**
+```bash
+npm run dev
+```
+**Ejecucion de JSON server**
+```bash
+npx json-server --watch data/videoteca.json --port 3000
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Opciones tecnicas y arquitectonicas
+Las opciones tecnicas y arquitectonicas fueron seleccionadas considerando la eficiencia y la velocidad de desarrollo. Se eligió React por su rendimiento y configuración simplificada. El uso de componentes funcionales y el enfoque en la gestión del estado con Hooks permite un código más limpio.
+
+## Mejoras posibles
+Una mejora potencial para este proyecto sería la implementación de paginación para la lista de películas especialmente y que si se pueda reproducir videos.
+
+## Si tuviera mas tiempo
+Con más tiempo, consideraría mejorar la accesibilidad de la aplicación y agregar comentarios detallados al código para facilitar la colaboración, el filtrado de las peliculas que detecte que peliculas son las mas vista y filtre por ese orden.
