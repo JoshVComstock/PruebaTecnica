@@ -31,7 +31,7 @@ npm run test
 Las opciones tecnicas y arquitectonicas fueron seleccionadas considerando la eficiencia y la velocidad de desarrollo. Se eligió React por su rendimiento y configuración simplificada. El uso de componentes funcionales y el enfoque en la gestión del estado con Hooks permite un código más limpio.
 
 ## Mejoras posibles
-Una mejora potencial para este proyecto sería la implementación de paginación para la lista de películas especialmente y que si se pueda reproducir videos.
+Una mejora potencial para este proyecto sería la implementación de paginación para la lista de películas especiales y que si se pueda reproducir videos.
 
 ## Si tuviera mas tiempo
 Con más tiempo, consideraría mejorar la accesibilidad de la aplicación y agregar comentarios detallados al código para facilitar la colaboración, el filtrado de las peliculas que detecte que peliculas son las mas vista y filtre por ese orden.
