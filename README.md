@@ -23,7 +23,10 @@ npm run dev
 ```bash
 npx json-server --watch data/videoteca.json --port 3000
 ```
-
+**Ejecucion de vitest**
+```bash
+npm run test
+```
 ## Opciones tecnicas y arquitectonicas
 Las opciones tecnicas y arquitectonicas fueron seleccionadas considerando la eficiencia y la velocidad de desarrollo. Se eligió React por su rendimiento y configuración simplificada. El uso de componentes funcionales y el enfoque en la gestión del estado con Hooks permite un código más limpio.
 
