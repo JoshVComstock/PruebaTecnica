@@ -7,10 +7,10 @@ Este proyecto es una aplicacion web que esta desarrollada con React y que muestr
 Con los siguientes pasos podra hacer la ejecucion de forma local:
 
 **Clonar el repositorio**
-    ```bash
+```bash
     git clone https://github.com/JoshVComstock/PruebaTecnica.git
     cd PruebaTecnica
-    ```
+```
 **Intalar dependencias**
 ```bash
 npm i
@@ -24,9 +24,11 @@ npm run dev
 npx json-server --watch data/videoteca.json --port 3000
 ```
 
-##Opciones tecnicas y arquitectonicas
+## Opciones tecnicas y arquitectonicas
 Las opciones tecnicas y arquitectonicas fueron seleccionadas considerando la eficiencia y la velocidad de desarrollo. Se eligió React por su rendimiento y configuración simplificada. El uso de componentes funcionales y el enfoque en la gestión del estado con Hooks permite un código más limpio.
-##Mejoras posibles
+
+## Mejoras posibles
 Una mejora potencial para este proyecto sería la implementación de paginación para la lista de películas especialmente y que si se pueda reproducir videos.
-##Si tubiera mas tiempo
+
+## Si tubiera mas tiempo
 Con más tiempo, consideraría mejorar la accesibilidad de la aplicación y agregar comentarios detallados al código para facilitar la colaboración, el filtrado de las peliculas que detecte que peliculas son las mas vista y filtre por ese orden.
