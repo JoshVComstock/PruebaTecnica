@@ -14,9 +14,6 @@ const Caja = ({ info }:cajaProps) => {
                 <p className='text-gray-400 text-sm'>Año emision : {info.releaseYear}</p>
                 <p className='text-white'>{info.description}</p>
                 <p className='text-gray-400'>Clase : {info.programType}</p>
-                <div className='w-full flex justify-end'>
-                    <button className='bg-gray-200 w-[110px] p-2 rounded-[7px] text-gray-600 hover:opacity-80'>Ver pelicula</button>
-                </div>
             </div>
         </div>
     )

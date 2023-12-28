@@ -10,7 +10,7 @@ import { useGet } from "./hook/useGet";
 import { Movie } from "./interface/Movie";
 function App() {
   const { data, setData } = useStore();
-  const { res } = useGet<Movie[]>("videoteca", data == null);
+  const { res, estado, getData } = useGet<Movie[]>("videoteca", data == null);
   useEffect(() => {
     if (res) {
       setData(res);
@@ -18,6 +18,12 @@ function App() {
   }, [res])
   return (
     <BrowserRouter>
+      {
+        estado === "error" ? <div className="w-full h-full bg-transparent absolute flex justify-center items-center z-10 flex-col gap-9">
+          <p className="text-gray-500">Error al obtener los datos</p>
+          <button className='bg-gray-200 w-[150px] p-2 rounded-[7px] text-gray-600 hover:opacity-80' onClick={getData}>Volver a cargar</button>
+        </div> : null
+      }
       <Routes>
         <Route path="/" element={<Nav />}>
           <Route path="/" element={<Inicio />} />
