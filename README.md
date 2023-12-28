@@ -2,7 +2,7 @@
 ## Esta prueba se trata de un listado de peliculas
 Este proyecto es una aplicacion web que esta desarrollada con React y que muestra un listado de peliculas de forma alfabetica y mayores con emision mayores o igual a 2010, la aplicacion tambien cuenta con 3 secciones en Inicio que muestra todas como peliculas y series, la seccion series que solo muestra series y la seccion peliculas que solo muestra peliculas, en todos las secciones solo muestran un listado de 20.
 
-##Introduccion de Ejecucion
+## Introduccion de Ejecucion
 
 Con los siguientes pasos podra hacer la ejecucion de forma local:
 
