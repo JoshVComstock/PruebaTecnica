@@ -7,6 +7,7 @@ import { useState } from 'react';
 import MovieList from './movieList';
 import useStore from '../store/movies';
 import Busqueda from '../pages/busqueda';
+import Paginacion from './paginacion';
 
 const Nav = () => {
   const [filtro, setFiltro] = useState("");
@@ -36,6 +37,7 @@ const Nav = () => {
         </div>
       </header>
       <section className='min-h-[calc(150dvh_-_5rem)] bg-gray-800'>
+       
         {
           filtro ? <Busqueda filtro={filtro} /> : <Outlet />
         }

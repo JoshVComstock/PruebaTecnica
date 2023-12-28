@@ -7,15 +7,14 @@ const Inicio = () => {
   const datosFiltrados = data?.filter(item => (
     item.releaseYear >= 2010
   ))
-  const limiteDatos = datosFiltrados?.slice(0, 20);
   return (
     <div className='w-full min-h-full  p-10 '>
       {
-        !limiteDatos ? (
+        !datosFiltrados ? (
           <Loading />
         ) :
           (
-            <MovieList list={limiteDatos} title={"Peliculas en linea"}/>
+            <MovieList list={datosFiltrados} title={"Peliculas en linea"}/>
           )
       }
     </div>
