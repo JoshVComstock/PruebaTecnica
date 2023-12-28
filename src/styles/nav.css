@@ -1,0 +1,13 @@
+#logo {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(56deg) brightness(103%) contrast(101%);
+}
+
+#fooimg {
+    width: 34px;
+    height: 34px;
+    margin: 0px 20px;
+}
+
+#fooimg {
+    cursor: pointer;
+}
